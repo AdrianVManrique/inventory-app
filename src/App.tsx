@@ -1,15 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { Inventory } from './Inventory';
 
 function App() {
   
   return (
-    <>
-      <div>WTF</div>
-      <Inventory></Inventory>
-    </>
+    <div className="Root">
+      <div className="Menu">Item List</div>
+      <div className="InventoryWrapper">
+        <Inventory inventoryType="InventoryBackground"></Inventory>
+        <Inventory inventoryType="InventoryBackground-Medium"></Inventory>
+        <Inventory inventoryType="InventoryBackground-Hard"></Inventory>
+      </div>
+    </div>
   );
 }
 
